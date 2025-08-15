@@ -8,8 +8,8 @@
    
 int main() {
     const int size = 81;
-    char arr[size + size] = {};
-    char arr1[] = " helloooo vonc es";
+    char arr[size + 30] = {};
+    char arr1[] = " its just tets";
     scanf("%81str", arr);
     //scanf("%81str", arr1);
     //int a = custom_strlen(size, arr);
