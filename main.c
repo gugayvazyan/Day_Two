@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stddef.h>
 #include "header.h"
    
 int main() {
@@ -7,7 +8,7 @@ int main() {
     char arr[size + 30] = {};
     char arr1[size]; 
     int a = 0;
-    
+    char let = '\0';
 
 
 
@@ -37,8 +38,22 @@ int main() {
     fputs(arr1, stdout);
 	*/
     
+    /*    //STRCHR
+    fgets(arr, 80, stdin);
+    scanf(" %c", &let);
+    fputs(custom_strchr(arr,let) , stdout);
+    */
+    
+    /* //STRRCHR
+    fgets(arr, 80, stdin);
+    scanf(" %c", &let);
+    fputs(custom_strrchr(arr,let) , stdout);
+    */
 
-
+    //STRSTR
+    fgets(arr, 80, stdin);
+    fgets(arr1, 80, stdin);
+    fputs(custom_strstr(arr,arr1) , stdout);
 
     return 0;
 }
