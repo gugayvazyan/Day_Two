@@ -1,27 +1,44 @@
 #include <stdio.h>
 #include <string.h>
 #include "header.h"
-#include "custom_strlen.c"
-#include "custom_strcpy.c"
-#include "custom_strcat.c"
-#include "custom_strcmp.c"
    
 int main() {
     const int size = 81;
     char arr[size + 30] = {};
-    char arr1[] = " its just tets";
-    scanf("%81str", arr);
-    //scanf("%81str", arr1);
-    //int a = custom_strlen(size, arr);
-    // int a = custom_strcmp(size, arr, arr1);
-    //custom_strcpy(size, arr, arr1);
-    custom_strcat(size, arr, arr1);
-
-	
+    char arr1[size]; 
+    int a = 0;
+    
 
 
 
-    printf("%s\n", arr);
-   // printf("%d", a);
+    /*  //STRLEN
+    fgets(arr, 80, stdin);
+    printf("%d\n", custom_strlen(arr)); 
+    */
+
+    /* //STRCMP
+    
+    fgets(arr, 80, stdin);
+    fgets(arr1, 80, stdin);
+    printf("%d\n", custom_strcmp(arr, arr1));
+    */
+
+
+    /* //STRCPY
+    fgets(arr1, 80, stdin);
+    custom_strcpy(arr, arr1);
+    fputs(arr, stdout);  
+    */
+     
+    /* //STRCAT
+    fgets(arr1, 80, stdin);
+    fgets(arr, 80, stdin);
+    custom_strcat(arr, arr1);
+    fputs(arr1, stdout);
+	*/
+    
+
+
+
     return 0;
 }

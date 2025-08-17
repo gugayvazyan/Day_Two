@@ -1,4 +1,5 @@
-int custom_strcmp(const int size, char* arr, char* arr1) {
+int custom_strcmp(char* arr, char* arr1) {
+    int size = 81;
     int i = 0;
     int res = 0;
     while (i < size) {

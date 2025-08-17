@@ -1,7 +1,7 @@
-void custom_strcpy(const int size, char* arr, char* cpy) {
+void custom_strcpy(char* arr, char* cpy) {
     int i = 0;
-    while (arr[i] != '\0') {
-        cpy[i] = arr[i];
+    while (cpy[i] != '\0') {
+        arr[i] = cpy[i];
         ++i;
     }
     
