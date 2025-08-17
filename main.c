@@ -53,7 +53,9 @@ int main() {
     //STRSTR
     fgets(arr, 80, stdin);
     fgets(arr1, 80, stdin);
-    fputs(custom_strstr(arr,arr1) , stdout);
+    char* res = custom_strstr(arr, arr1);
+    if (res) fputs(custom_strstr(arr,arr1) , stdout);
+    else printf("Substring not found\n");
 
     return 0;
 }

@@ -1,20 +1,28 @@
 char* custom_strstr(char* arr, char* check) {
+     char* c = check;
+     while (*c) {
+        if (*c == '\n') {
+            *c = '\0';
+            break;
+        }
+        ++c;
+    }
 
-    char* start_arr;
-    char* start_check = check;
     
     if (!*check) return arr;
-    
-
 
     while (*arr) {
-        while (*arr && *check && *arr == *check) {
-                if (*arr = *check) {
+        char* arr_temp = arr;
+        char* check_temp = check;
 
+        while (*arr_temp && *check_temp && *arr_temp == *check_temp) {
+            ++arr_temp;
+            ++check_temp;
         }
-        if(!(*check)) return start_arr;
-        
-        arr = start_arr  + 1;
+
+        if (!*check_temp) return arr;
+
+        ++arr;
     }
 
     return 0;
