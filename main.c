@@ -50,12 +50,21 @@ int main() {
     fputs(custom_strrchr(arr,let) , stdout);
     */
 
-    //STRSTR
+    /* //STRSTR
     fgets(arr, 80, stdin);
     fgets(arr1, 80, stdin);
     char* res = custom_strstr(arr, arr1);
     if (res) fputs(custom_strstr(arr,arr1) , stdout);
     else printf("Substring not found\n");
+	*/
+
+	//STRSPN	
+	fgets(arr, 80, stdin);
+	fgets(arr1, 80, stdin);
+	printf("%d", custom_strspn(arr, arr1));
+	
+
+
 
     return 0;
 }
